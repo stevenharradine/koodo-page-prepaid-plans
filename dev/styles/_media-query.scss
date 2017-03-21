@@ -1,0 +1,191 @@
+// standard Koodo breakpoints
+// small  (0 - 767)
+// medium (768 - 1099)
+// large  (1100+)
+
+@media screen and (min-width: 330px) {
+	// change line flow of Prepaid Feature 3 <h3> title (EN and FR)
+	.koodo-prepaid .pp-feature-3 h3 span { display: block; }
+}
+
+@media screen and (min-width: 340px) {
+	// change line flow of Prepaid Feature 2 <h3> title (FR only)
+	.lang-fr .pp-feature-2 h3 span {
+		display: inline;
+		span { display: block; } // nested span
+	}
+}
+
+// override production defaults
+@media screen and (max-width: 360px) {
+	.content img { // styles copied from .ai-container img (main.scss)
+		display: block !important;
+		max-height: 40px;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	// return Prepaid Feature 1 <h3> title (EN and FR) to default line flow
+	.koodo-prepaid .pp-feature-1 h3 span { display: inline; }
+
+	// increase font-size for Prepaid Feature titles (FR only)
+	.km-prepaid-plans.lang-fr h3 { font-size: 16px; }
+}
+
+@media screen and (min-width: 420px) {
+	.koodo-prepaid .pp-feature-2 h3 span { display: inline; }
+}
+
+@media screen and (min-width: 500px) {
+	// return Prepaid Feature 3 <h3> title (EN only) to default line flow
+	.lang-en .pp-feature-3 h3 span { display: inline; }
+}
+
+@media screen and (min-width: 550px) {
+	// return Prepaid Feature 3 <h3> title (FR only) to default line flow
+	.lang-fr .pp-feature-3 h3 span { display: inline; }
+}
+
+// Canada-wide BAO tables (2x) - side-by-side layout (EN only)
+@media screen and (min-width: 640px) {
+	.lang-en {
+		.bao-table.canada-wide th { font-size: 16px; }
+
+		.bao-canada-container {
+			display: flex;
+			justify-content: space-between;
+
+			.canada-wide { width: 49%; }
+		}
+	}
+}
+
+@media screen and (min-width: 650px) {
+	// return Prepaid Feature 2 <h3> title (FR only) to default line flow
+	.lang-fr .pp-feature-2 h3 span span { display: inline; }
+}
+
+// Canada-wide BAO tables (2x) - side-by-side layout (FR only)
+@media screen and (min-width: 760px) {
+	.lang-fr {
+		.bao-table.canada-wide th { font-size: 16px; }
+
+		.bao-canada-container {
+			display: flex;
+			justify-content: space-between;
+
+			.canada-wide { width: 49%; }
+		}
+	}
+}
+
+// override production defaults
+@media screen and (max-width: 767px) {
+	div#site-wrapper.page-content div#site-container { padding: 0; }
+}
+
+// font-size and padding changes for larger tablet/desktop view
+@media screen and (min-width: 768px) {
+	.km-prepaid-plans {
+		h1 { font-size: 60px; } // primary heading
+		h2 { font-size: 30px; } // section headings
+		// EN h3 increases at 790px, FR h3 increases at 860px (see below breakpoints)
+	}
+
+	.koodo-prepaid {
+		h1 + p { padding: 20px 0 40px 0;	} // paragraph following primary heading
+	}
+
+	.lang-en .bao-callout-bubble { padding: 25px; }
+}
+
+// side-by-side layout for Prepaid Feature items
+@media screen and (min-width: 790px) {
+.content .koodo-prepaid ul.accordion-items li.accordion-item { padding-bottom: 0; }
+
+	// sect#1
+	.lang-en h3 { font-size: 20px; }
+
+	.koodo-prepaid {
+		.accordion-items {
+			display: flex;
+			justify-content: space-between;
+		}
+
+			.accordion-item {
+				width: 32%;
+
+				h3 span { display: block; }
+			}
+
+				.ai-container {
+					flex-direction: column;
+
+					div {
+						width: 100%; // fix to prevent IE from cutting off text
+						flex-direction: column;
+					}
+
+					img {
+						max-height: 46px;
+						margin: 0 auto;
+					}
+				}
+
+					h3 {
+						width: 100%; // fix to prevent IE from cutting off text
+						padding: 10px 0;
+						text-align: center;
+					}
+
+				.ai-details { text-align: center; }
+	}
+}
+
+// Base Plans table - hide mobile and display desktop (EN only)
+@media screen and (min-width: 850px) {
+	.lang-en .bp-table {
+		&.stacked { display: none; }
+		&.full { display: table; }
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.km-prepaid-plans.lang-fr h3 { font-size: 20px; }
+}
+
+// Base Plans table - hide mobile and display desktop (FR only)
+@media screen and (min-width: 940px) {
+	.lang-fr .bp-table {
+		&.stacked { display: none; }
+		&.full { display: table; }
+	}
+}
+
+// U.S. Roaming BAO tables (3x) - side-by-side layout (EN only)
+@media screen and (min-width: 960px) {
+	.lang-en {
+		.bao-table.us-roaming th { font-size: 16px; }
+
+		.bao-us-container {
+			display: flex;
+			justify-content: space-between;
+
+			.us-roaming { width: 32%; }
+		}
+	}
+}
+
+// U.S. Roaming BAO tables (3x) - side-by-side layout (FR only)
+@media screen and (min-width: 980px) {
+	.lang-fr {
+		.bao-table.us-roaming th { font-size: 16px; }
+
+		.bao-us-container {
+			display: flex;
+			justify-content: space-between;
+
+			.us-roaming { width: 32%; }
+		}
+	}
+}

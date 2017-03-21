@@ -1,0 +1,311 @@
+//- filepath: /sites/default/files/uploads/prepaid-plans/filename.filetype
+
+//- HTML character codes:
+	//- ampersand                    - &#38;
+	//- non-breaking hyphen          - &#8209;
+	//- for Kooding glyphs, refer to _fonts.scss file
+
+doctype html
+html(lang="en")
+	head
+		title km.com/prepaid-plans
+		// START of local webserver CSS resources
+		link(rel="icon", type="image/png", href="http://localhost:4000/public/icons/koodo-blueberry-favicon-196-196.png")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-stag-sans-web/stag-sans-web.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-kooding-glyphs/kooding-glyphs.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/page-title-helper.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/window-dimensions-helper.css")
+		// END of local webserver CSS resources
+		link(rel="stylesheet" href="styles/main.css")
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		style.
+			/* project-specific local-only styles go here */
+			body { margin: 0; }
+
+			#site-container { max-width: 1160px; margin: 0 auto; }
+	body
+		div#site-wrapper.page-content <!-- markup to mirror production page structure -->
+			div#ptHelper <!-- markup to mirror production page structure -->
+				h2 Prepaid plans
+			div#site-container <!-- markup to mirror production page structure -->
+				div#site-content <!-- markup to mirror production page structure -->
+					div.content <!-- markup to mirror production page structure -->
+						main.km-prepaid-plans.lang-en(role="main")
+
+							//- sect#1
+							section.koodo-prepaid
+								div.inner-container
+									h1 Koodo Prepaid. A happier way to talk, text and use data.
+									p Koodo Prepaid has you covered. With no credit checks and no fixed-term contracts, it's just affordable and reliable national wireless service. Prepare your happy dance.
+									ul.accordion-items
+										li.accordion-item.pp-feature-1
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/wallet-with-arrow.png", alt="")
+														h3 Get a #[sup $]20 #[span activation bonus]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p Activate Koodo Prepaid today at #[a(href="https://activateprepaid.koodomobile.com") activateprepaid.koodomobile.com]. Activation bonus will be applied at time of activation. Not redeemable for cash. Can be used towards the purchase of a base plan or Booster® add-on.
+												a.cta-link(href="https://prepaidselfserve.koodomobile.com") Activate your phone &nbsp; #[span.kooding-glyph.thin-chevron-right]
+										li.accordion-item.pp-feature-2
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/credit-card-with-arrow.png", alt="")
+														h3 Save 10% with #[span automatic top&#8209;ups]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p For hassle-free top-ups, register for automatic 30-day top-ups by logging into your Self Serve account. The 10% savings on your monthly base plan will be credited back to your account each time your base plan renews for another month, and every month after that, as long as you keep automatic top-ups on your account.
+												a.cta-link(href="https://prepaidselfserve.koodomobile.com") Register for automatic top-ups &nbsp; #[span.kooding-glyph.thin-chevron-right]
+										li.accordion-item.pp-feature-3
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/phone-with-message.png", alt="")
+														h3 Get a FREE 100 minute #[span Talk Booster® add&#8209;on]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p For a limited time, get a FREE 100 minute Talk Booster add-on#[sup #[a(href="#nitty-gritty-9") 9]] when you register your credit card or Visa Debit card on your Koodo Prepaid Self Serve account.
+												a.cta-link(href="https://prepaidselfserve.koodomobile.com") Register a credit or Visa Debit card &nbsp; #[span.kooding-glyph.thin-chevron-right]
+
+							//- sect#2
+							section.base-plans
+								div.inner-container
+									h2 Base Plans
+									p A base plan is what keeps your account active. The base plan you choose will automatically renew every 30 days.#[sup #[a(href="#nitty-gritty-1") 1]]
+
+								table.bp-table.stacked
+									tr.row-1
+										td.col-1.price #[span $]15
+										td.col-2 Unlimited Text &#38; Picture Messaging#[sup #[a(href="#nitty-gritty-2") 2]]
+									tr.row-2
+										td.col-1.price #[span $]25
+										td.col-2 Unlimited Text &#38; Picture Messaging,#[sup #[a(href="#nitty-gritty-2") 2]] Unlimited Evenings &#38; Weekends Calling from 7pm#[sup #[a(href="#nitty-gritty-3") 3]]
+									tr.row-3
+										td.cwp-text(colspan="2") Canada-wide Plans
+									tr.row-4
+										td.col-1.price #[span $]35
+										td.col-2 Unlimited Text &#38; Picture Messaging,#[sup #[a(href="#nitty-gritty-2") 2]] Unlimited Evenings &#38; Weekends Calling from 5pm,#[sup #[a(href="#nitty-gritty-3") 3]] Unlimited Canada-wide Incoming Calls
+									tr.row-5
+										td.col-1.price #[span $]50
+										td.col-2 Unlimited Text &#38; Picture Messaging,#[sup #[a(href="#nitty-gritty-2") 2]] Unlimited Evenings &#38; Weekends Calling from 5pm,#[sup #[a(href="#nitty-gritty-3") 3]] Unlimited Canada-wide Incoming Calls, Unlimited Canada-wide Daytime Calls#[sup #[a(href="#nitty-gritty-4") 4]]
+
+								table.bp-table.full
+									tr.row-1
+										td(colspan="3")
+										td.cwp-text(colspan="2") Canada-wide Plans
+									tr.row-2
+										td.col-1 Fee per 30 days
+										td.col-2.price #[span $]15
+										td.col-3.price #[span $]25
+										td.col-4.price #[span $]35
+										td.col-5.price #[span $]50
+									tr.row-3
+										td.col-1 Unlimited Text &#38; Picture Messaging#[sup #[a(href="#nitty-gritty-2") 2]]
+										td.col-2 #[span.kooding-glyph.checkmark]
+										td.col-3 #[span.kooding-glyph.checkmark]
+										td.col-4 #[span.kooding-glyph.checkmark]
+										td.col-5 #[span.kooding-glyph.checkmark]
+									tr.row-4
+										td.col-1 Unlimited Evenings &#38; Weekends Calling#[sup #[a(href="#nitty-gritty-3") 3]]
+										td.col-2
+										td.col-3 7pm
+										td.col-4 5pm
+										td.col-5 5pm
+									tr.row-5
+										td.col-1 Unlimited Canada-wide Incoming Calls
+										td.col-2
+										td.col-3
+										td.col-4 #[span.kooding-glyph.checkmark]
+										td.col-5 #[span.kooding-glyph.checkmark]
+									tr.row-6
+										td.col-1 Unlimited Canada-wide Daytime Calls#[sup #[a(href="#nitty-gritty-4") 4]]
+										td.col-2
+										td.col-3
+										td.col-4
+										td.col-5 #[span.kooding-glyph.checkmark]
+
+								div.inner-container.bp-footnotes
+									p All base plans include:#[sup #[a(href="#nitty-gritty-5") 5]]
+									ul
+										li Voicemail 10,#[sup #[a(href="#nitty-gritty-6") 6]] Call Forwarding,#[sup #[a(href="#nitty-gritty-6") 6]] Call Display, Call Waiting, Conference Calling
+										li International text messages sent and received anywhere in Canada#[sup #[a(href="#nitty-gritty-2") 2]]
+
+							//- sect#3
+							section.booster-add-ons
+								div.bao-summary
+									div.inner-container.clearfix
+										span.bao-callout-bubble #[span Booster] #[span add-ons] #[span don't] #[span expire.#[sup #[a(href="#nitty-gritty-7") 7]]]
+										h2 Booster Add-ons
+										p Have friends or family all over Canada? If you need long distance minutes, anytime/daytime minutes or data, grab a Talk or Data Booster add-on to complement your base plan.
+										p Planning to use your phone in the U.S.? Then our U.S. Roaming Booster add-ons are best for you!
+										p Any unused minutes, text or data will be carried over when you renew your base plan. So it's best to pick the biggest Booster add-ons to enjoy our best per-minute or per-megabyte rate.
+
+								div.bao-canada-container
+									table.bao-table.canada-wide
+										tr.row-1
+											th(colspan="2") Canada-Wide Data Booster Add-ons#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 #[span $]30
+											td.col-2 1 GB
+										tr.row-3
+											td.col-1 #[span $]20
+											td.col-2 500 MB
+										tr.row-4
+											td.col-1 #[span $]10
+											td.col-2 100 MB
+
+									table.bao-table.canada-wide
+										tr.row-1
+											th(colspan="2") Canada-Wide Talk Booster Add-ons#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 #[span $]25
+											td.col-2 500 Anytime minutes
+										tr.row-3
+											td.col-1 #[span $]10
+											td.col-2 100 Anytime minutes
+										tr.row-4
+											td.col-1 #[span $]5
+											td.col-2 25 Anytime minutes
+
+								div.inner-container.bao-footnotes
+									p You can also use your Talk Booster add-on#[sup #[a(href="#nitty-gritty-7") 7]] to make calls outside Canada. Anytime minutes will be deducted as follows:
+									ul
+										li 1 min call from Canada to a U.S. destination will deduct 2 mins
+										li 1 min call from Canada to international destinations will deduct 5 mins
+								
+								div.bao-us-container
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") U.S. Roaming Data Booster Add-ons#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 #[span $]20
+											td.col-2 500 MB
+										tr.row-3
+											td.col-1 #[span $]5
+											td.col-2 50 MB
+
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") U.S. Roaming Talk Booster Add-ons#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 #[span $]20
+											td.col-2 250 mins
+										tr.row-3
+											td.col-1 #[span $]5
+											td.col-2 25 mins
+
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") U.S. Roaming Text Booster Add-ons#[sup #[a(href="#nitty-gritty-8") 8]]
+										tr.row-2
+											td.col-1 #[span $]20
+											td.col-2 1000 texts
+										tr.row-3
+											td.col-1 #[span $]5
+											td.col-2 250 texts
+								
+								div.inner-container
+									p Text Booster add-ons include international outgoing and unlimited incoming text messages.#[sup #[a(href="#nitty-gritty-8") 8]]
+
+							//- sect#4
+							section.how-to-get-started
+								div.inner-container
+									h2 How to get started.
+								ul.accordion-items
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 1.
+													p.item-summary Get a phone and a Koodo Prepaid SIM card.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Buy a new Certified Pre-Owned Koodo Prepaid phone.
+											p #[a.cta-link(href="https://www.koodomobile.com/prepaid-phones") Shop Prepaid phones &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+											p Or bring your own phone and buy a Koodo Prepaid SIM card.
+											p #[a.cta-link(href="https://www.koodomobile.com/find-nearest-store?INTCMP=KMNew_PrepaidPlansBTN__BringYourOwnPhone") Bring your own phone &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 2.
+													p.item-summary Activate your phone and select a base plan.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Now that you have a phone and a Koodo Prepaid SIM card, it's time to activate your phone at #[a(href="https://activateprepaid.koodomobile.com") activateprepaid.koodomobile.com] and select your base plan.
+											p #[a.cta-link(href="https://activateprepaid.koodomobile.com") Activate your phone &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 3.
+													p.item-summary Get optional Booster Add&#8209;ons.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Grab Booster add-ons whenever you need Canada-wide or U.S. Roaming minutes, text or data. Booster add-ons don't expire.#[sup #[a(href="#nitty-gritty-7") 7]] Any unused minutes, texts, or data will be carried over when you renew your base plan.#[sup #[a(href="#nitty-gritty-7") 7]]
+											p To add Booster add-ons to your prepaid account, you'll need to log into your Self Serve account.
+											p #[a.cta-link(href="https://prepaidselfserve.koodomobile.com") Buy a Booster Add-on &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 4.
+													p.item-summary Top up your Koodo Prepaid account.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Top-ups add credits to your account so you can pay for your base plan every 30 days and buy Booster add-ons. There are two ways you can pay for your top-ups: credit or Visa Debit card or top-up vouchers, which are available at a Koodo Shop or Retail Partner.
+											p To top up your prepaid account, you need to log into your Self Serve account, or you can dial *611 from your Koodo phone.
+											p #[a.cta-link(href="https://prepaidselfserve.koodomobile.com") Top up your account now &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+											p Looking for prepaid vouchers?
+											p #[a.cta-link(href="https://www.koodomobile.com/prepaid-vouchers") Find a store &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												p Wanna know more?
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											h4 Using Your Phone in Canada
+											p If you want to make or receive daytime calls, check if your plan includes daytime minutes. If it doesn't, you'll need a Canada-wide Talk Booster add-on.
+											p The minutes included in the $25 base plan are for local calls. If you want to make or receive long distance calls, you'll need a Canada-wide Talk Booster add-on.
+											p You can use your Koodo Prepaid phone all over Canada but it won't work outside of the country.
+											p Anytime minutes will be deducted from your Talk Booster add-on as follows:
+											ul
+												li 1 min call anywhere within Canada will deduct 1 min
+												li 1 min call from Canada to the U.S. will deduct 2 mins
+												li 1 min call from Canada to international locations will deduct 5 mins
+											h4 Travelling to the U.S.
+											p You can stay connected while travelling in the U.S. by adding U.S. Roaming Talk, U.S. Roaming Text or U.S. Roaming Data Booster add-ons to your base plan. U.S. Roaming Talk Booster add-ons include calls within the U.S. and to Canada. U.S. Roaming Text Booster add-ons include international outgoing and unlimited incoming text messages.#[sup #[a(href="#nitty-gritty-8") 8]] You will require a U.S. Roaming Data Booster Add-on to send or receive picture and video messages.
+									li#nitty-gritty.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												p.nitty-gritty-title Nitty Gritty (1 &#8209; 9)
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											ol.numbered-list
+												li#nitty-gritty-1 Account must have enough service credits to cover the cost of the plan.
+												li#nitty-gritty-2 Availability of service will vary by country and is subject to change without notice. Excludes premium messages and subscription-based messages. Picture messaging includes international picture messages sent and received within Canada. Picture messaging is not supported by BlackBerry smartphones that are not on the BlackBerry 10 operating system.
+												li#nitty-gritty-3 Includes Canada-wide calling for Canada-wide plans and local calling otherwise. Unlimited evenings start at the time indicated (5pm or 7pm) and end at 8am the next day. Unlimited weekends start at 5pm or 7pm Friday and end at 8am Monday.
+												li#nitty-gritty-4 Calls must be made and completed within Canada.
+												li#nitty-gritty-5 The $15 base plan requires a Talk Booster add-on and sufficient anytime minutes in your account to use voice features.
+												li#nitty-gritty-6 Voicemail and Call Forwarding use airtime. To retrieve Voicemail or use Call Forwarding on your Koodo phone, you must have sufficient anytime minutes in your account. Anytime minutes are charged by the minute and the airtime required to connect your calls is drawn from the included minutes.
+												li#nitty-gritty-7 Talk or Data Booster add-ons don't expire if account is active. Talk or Data Booster add-ons are available for use only when there is a non-expired base plan on the account. Booster add-ons will be removed from the account upon account deactivation. Anytime minutes are charged by the minute and the airtime required to connect your calls is drawn from the included minutes. All data usage will be rounded up to the nearest 10 KB. Data Booster add-ons are not available with BlackBerry smartphones and are not on the BlackBerry 10 operating system.
+												li#nitty-gritty-8 You will require a U.S. Roaming Data Booster Add-on to send or receive picture and video messages.
+												li#nitty-gritty-9 Only one free 100-minute Talk Booster add-on per customer.
+						<!-- /.km-prepaid-plans.lang-en -->
+					<!-- /.content -->
+				<!-- /#site-content -->
+			<!-- /#site-container -->
+		<!-- #site-wrapper.page-content -->
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js")
+		// START of local webserver JS resources
+		script(src="http://localhost:4000/public/scripts/page-title-helper.js")
+		script(src="http://localhost:4000/public/scripts/window-dimensions-helper.js")
+		// END of local webserver JS resources
+		script(src="scripts/main.js")

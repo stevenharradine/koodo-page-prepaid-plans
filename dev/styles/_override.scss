@@ -1,0 +1,18 @@
+// common style overrides of production defaults
+
+div#site-wrapper.page-content {
+	// remove unwanted padding (this enables full-width elements; use an .inner-container to contain text)
+	div#site-container {
+		padding: 0;
+		padding-left: 0;
+	}
+
+	// remove unwanted margin-top and margin-bottom
+	div#site-content { margin: 0; }
+}
+
+// near the bottom of the page, remove the following elements
+div.link-wrapper, // small triangle bullet
+div#content-bottom-info { // empty HTML element
+	display: none;
+}

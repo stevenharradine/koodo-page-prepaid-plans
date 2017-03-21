@@ -1,0 +1,311 @@
+//- filepath: /sites/default/files/uploads/prepaid-plans/filename.filetype
+
+//- HTML character codes:
+	//- ampersand                    - &#38;
+	//- non-breaking hyphen          - &#8209;
+	//- for Kooding glyphs, refer to _fonts.scss file
+
+doctype html
+html(lang="fr")
+	head
+		title km.com/prepaid-plans
+		// START of local webserver CSS resources
+		link(rel="icon", type="image/png", href="http://localhost:4000/public/icons/koodo-blueberry-favicon-196-196.png")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-stag-sans-web/stag-sans-web.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-kooding-glyphs/kooding-glyphs.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/page-title-helper.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/window-dimensions-helper.css")
+		// END of local webserver CSS resources
+		link(rel="stylesheet" href="styles/main.css")
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		style.
+			/* project-specific local-only styles go here */
+			body { margin: 0; }
+
+			#site-container { max-width: 1160px; margin: 0 auto; }
+	body
+		div#site-wrapper.page-content <!-- markup to mirror production page structure -->
+			div#ptHelper <!-- markup to mirror production page structure -->
+				h2 Forfaits prépayés
+			div#site-container <!-- markup to mirror production page structure -->
+				div#site-content <!-- markup to mirror production page structure -->
+					div.content <!-- markup to mirror production page structure -->
+						main.km-prepaid-plans.lang-fr(role="main")
+
+							//- sect#1
+							section.koodo-prepaid
+								div.inner-container
+									h1 Koodo Prépayé. La joie de parler, de texter et d'utiliser vos données.
+									p Koodo Prépayé vous simplifie la vie : aucune enquête de crédit ni aucun contrat à durée déterminée, seulement un service cellulaire fiable et abordable partout au pays. Une p'tite danse de la joie s'impose.
+									ul.accordion-items
+										li.accordion-item.pp-feature-1
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/wallet-with-arrow.png", alt="")
+														h3 Prime d'activation #[span de 20 #[sup $]]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p Activez votre service Koodo Prépayé dès aujourd'hui à #[a(href="https://activerleprepaye.koodomobile.com") activerleprepaye.koodomobile.com]. La prime d'activation sera appliquée au moment de l'activation et ne peut être échangée contre de l'argent. Peut être utilisée à l'achat d'un forfait de base et d'à-côtés.
+												a.cta-link(href="https://libreserviceprepaye.koodomobile.com") Activer votre téléphone &nbsp; #[span.kooding-glyph.thin-chevron-right]
+										li.accordion-item.pp-feature-2
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/credit-card-with-arrow.png", alt="")
+														h3 Économisez 10 % #[span avec les #[span réapprovisionnements automatiques!]]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p Inscrivez-vous aux renouvellements automatiques aux 30 jours dans votre compte Libre-service. Vous n'aurez jamais à vous inquiéter d'avoir à faire un paiement. L'économie de 10 % sur votre forfait de base sera créditée à votre compte chaque fois que votre forfait de base sera renouvelé pour le mois suivant, puis chaque mois par la suite, tant et aussi longtemps que vous demeurez inscrit aux réapprovisionnements automatiques.
+												a.cta-link(href="https://libreserviceprepaye.koodomobile.com") Pour m'inscrire aux renouvellements automatiques &nbsp; #[span.kooding-glyph.thin-chevron-right]
+										li.accordion-item.pp-feature-3
+											button.ai-summary
+												div.ai-container
+													div
+														figure
+															img(src="/sites/default/files/uploads/prepaid-plans/phone-with-message.png", alt="")
+														h3 Obtenez un à-côté Parler #[span de 100 minutes GRATUIT.]
+													span.kooding-glyph.circular-arrow-down
+											div.ai-details
+												p Pour un temps limité, obtenez un à-côté Parler de 100 minutes GRATUIT#[sup #[a(href="#nitty-gritty-9") 9]] lorsque vous enregistrez votre carte de crédit ou Visa Débit à votre compte Libre-service Prépayé.
+												a.cta-link(href="https://libreserviceprepaye.koodomobile.com") Enregistrer ma carte de crédit ou Visa Débit &nbsp; #[span.kooding-glyph.thin-chevron-right]
+
+							//- sect#2
+							section.base-plans
+								div.inner-container
+									h2 Forfaits de base
+									p Un forfait de base garde votre compte actif. Le forfait que vous choisissez se renouvelle automatiquement tous les 30 jours.#[sup #[a(href="#nitty-gritty-1") 1]]
+
+								table.bp-table.stacked
+									tr.row-1
+										td.col-1.price 15 #[span $]
+										td.col-2 Messagerie texte et photo illimitée#[sup #[a(href="#nitty-gritty-2") 2]]
+									tr.row-2
+										td.col-1.price 25 #[span $]
+										td.col-2 Messagerie texte et photo illimitée,#[sup #[a(href="#nitty-gritty-2") 2]] Appels illimités le soir et le week-end à partir de 19 h#[sup #[a(href="#nitty-gritty-3") 3]]
+									tr.row-3
+										td.cwp-text(colspan="2") Forfaits Canada Mur-à-mur
+									tr.row-4
+										td.col-1.price 35 #[span $]
+										td.col-2 Messagerie texte et photo illimitée,#[sup #[a(href="#nitty-gritty-2") 2]] Appels illimités le soir et le week-end à partir de 17 h,#[sup #[a(href="#nitty-gritty-3") 3]] Appels entrants illimités partout au Canada
+									tr.row-5
+										td.col-1.price 50 #[span $]
+										td.col-2 Messagerie texte et photo illimitée,#[sup #[a(href="#nitty-gritty-2") 2]] Appels illimités le soir et le week-end à partir de 17 h,#[sup #[a(href="#nitty-gritty-3") 3]] Appels entrants illimités partout au Canada, Appels illimités le jour partout au Canada#[sup #[a(href="#nitty-gritty-4") 4]]
+
+								table.bp-table.full
+									tr.row-1
+										td(colspan="3")
+										td.cwp-text(colspan="2") Forfaits Canada Mur-à-mur
+									tr.row-2
+										td.col-1 Frais / 30 jours
+										td.col-2.price 15 #[span $]
+										td.col-3.price 25 #[span $]
+										td.col-4.price 35 #[span $]
+										td.col-5.price 50 #[span $]
+									tr.row-3
+										td.col-1 Messagerie texte et photo illimitée#[sup #[a(href="#nitty-gritty-2") 2]]
+										td.col-2 #[span.kooding-glyph.checkmark]
+										td.col-3 #[span.kooding-glyph.checkmark]
+										td.col-4 #[span.kooding-glyph.checkmark]
+										td.col-5 #[span.kooding-glyph.checkmark]
+									tr.row-4
+										td.col-1 Appels illimités le soir et le week-end à partir#[sup #[a(href="#nitty-gritty-3") 3]]
+										td.col-2
+										td.col-3 19 h
+										td.col-4 17 h
+										td.col-5 17 h
+									tr.row-5
+										td.col-1 Appels entrants illimités partout au Canada
+										td.col-2
+										td.col-3
+										td.col-4 #[span.kooding-glyph.checkmark]
+										td.col-5 #[span.kooding-glyph.checkmark]
+									tr.row-6
+										td.col-1 Appels illimités le jour partout au Canada#[sup #[a(href="#nitty-gritty-4") 4]]
+										td.col-2
+										td.col-3
+										td.col-4
+										td.col-5 #[span.kooding-glyph.checkmark]
+
+								div.inner-container.bp-footnotes
+									p Tous les forfaits de base incluent :#[sup #[a(href="#nitty-gritty-5") 5]]
+									ul
+										li Boîte vocale 10,#[sup #[a(href="#nitty-gritty-6") 6]] renvoi d'appel,#[sup #[a(href="#nitty-gritty-6") 6]] afficheur, appels en attente et conférence téléphonique
+										li Textos internationaux envoyés et reçus partout au Canada#[sup #[a(href="#nitty-gritty-2") 2]]
+
+							//- sect#3
+							section.booster-add-ons
+								div.bao-summary
+									div.inner-container.clearfix
+										span.bao-callout-bubble #[span Des à-côtés] #[span sans date] #[span d'expiration.#[sup #[a(href="#nitty-gritty-7") 7]]]
+										h2 À-côtés
+										p Vous avez des amis partout au pays? Si vous avez besoin de minutes d'interurbain, de minutes en tout temps ou de données, optez pour nos à-côtés Parler ou Données pour compléter votre forfait de base.
+										p Vous comptez utiliser votre téléphone aux É.-U.? Nos à-côtés Itinérance aux É.-U. sont là pour vous!
+										p Les données, textos ou minutes inutilisés sont reportés de mois en mois lorsque vous renouvelez votre forfait de base. Il est donc préférable de choisir les plus grands à-côtés pour profiter de notre meilleur tarif à la minute ou au mégaoctet.
+
+								div.bao-canada-container
+									table.bao-table.canada-wide
+										tr.row-1
+											th(colspan="2") À-côtés Données valides partout au Canada#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 30 #[span $]
+											td.col-2 1 Go
+										tr.row-3
+											td.col-1 20 #[span $]
+											td.col-2 500 Mo
+										tr.row-4
+											td.col-1 10 #[span $]
+											td.col-2 100 Mo
+
+									table.bao-table.canada-wide
+										tr.row-1
+											th(colspan="2") À-côtés Parler valides partout au Canada#[sup #[a(href="#nitty-gritty-7") 7]]
+										tr.row-2
+											td.col-1 25 #[span $]
+											td.col-2 500 minutes en tout temps
+										tr.row-3
+											td.col-1 10 #[span $]
+											td.col-2 100 minutes en tout temps
+										tr.row-4
+											td.col-1 5 #[span $]
+											td.col-2 25 minutes en tout temps
+
+								div.inner-container.bao-footnotes
+									p Les minutes de votre à-côté Parler#[sup #[a(href="#nitty-gritty-7") 7]] peuvent aussi être utilisées pour faire des appels à l'extérieur du Canada. Les minutes en tout temps seront déduites comme ceci :
+									ul
+										li 1 min d'appel du Canada vers une destination américaine déduira 2 min
+										li 1 min d'appel du Canada vers une destination internationale déduira 5 min
+								
+								div.bao-us-container
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") À-côtés Données#[sup #[a(href="#nitty-gritty-7") 7]] Itinérance aux É.-U.
+										tr.row-2
+											td.col-1 20 #[span $]
+											td.col-2 500 Mo
+										tr.row-3
+											td.col-1 5 #[span $]
+											td.col-2 50 Mo
+
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") À-côtés Parler#[sup #[a(href="#nitty-gritty-7") 7]] Itinérance aux É.-U.
+										tr.row-2
+											td.col-1 20 #[span $]
+											td.col-2 250 minutes
+										tr.row-3
+											td.col-1 5 #[span $]
+											td.col-2 25 minutes
+
+									table.bao-table.us-roaming
+										tr.row-1
+											th(colspan="2") À-côtés Textos#[sup #[a(href="#nitty-gritty-8") 8]] Itinérance aux É.-U.
+										tr.row-2
+											td.col-1 20 #[span $]
+											td.col-2 1000 textos
+										tr.row-3
+											td.col-1 5 #[span $]
+											td.col-2 250 textos
+								
+								div.inner-container
+									p Les à-côtés Textos incluent les textos sortant internationaux et les textos entrants illimités.#[sup #[a(href="#nitty-gritty-8") 8]]
+
+							//- sect#4
+							section.how-to-get-started
+								div.inner-container
+									h2 Pour commencer.
+								ul.accordion-items
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 1.
+													p.item-summary Procurez&#8209;vous un téléphone et une carte SIM Koodo Prépayé.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Achetez un téléphone neuf ou un téléphone d'occasion certifié Koodo Prépayé.
+											p #[a.cta-link(href="https://www.koodomobile.com/fr/prepaid-phones") Magasiner les téléphones prépayés &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+											p Ou, apportez votre propre téléphone et achetez une carte SIM Koodo Prépayé.
+											p #[a.cta-link(href="https://www.koodomobile.com/fr/find-nearest-store?INTCMP=KMNew_PrepaidPlansBTN__BringYourOwnPhone") Apporter votre propre téléphone &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 2.
+													p.item-summary Activez votre téléphone et sélectionnez un forfait de base.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Vous avez un téléphone en main et une carte SIM Koodo Prépayé. Il est maintenant temps d'activer votre téléphone sur #[a(href="https://activerleprepaye.koodomobile.com") activerleprepaye.koodomobile.com] et de sélectionner un forfait de base.
+											p #[a.cta-link(href="https://activerleprepaye.koodomobile.com") Activer votre téléphone &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 3.
+													p.item-summary Ajoutez des à&#8209;côtés optionnels.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Ajouter des à-côtés lorsque vous avez besoin de minutes, de données ou de textos partout au Canada ou en itinérance aux É.-U. Les à-côtés n'expirent pas.#[sup #[a(href="#nitty-gritty-7") 7]] Les données, textos ou minutes inutilisés sont reportés de mois en mois lorsque vous renouvelez votre forfait de base.#[sup #[a(href="#nitty-gritty-7") 7]]
+											p Pour ajouter des à-côtés à votre compte prépayé, vous devrez ouvrir une session dans votre compte Libre-service.
+											p #[a.cta-link(href="https://libreserviceprepaye.koodomobile.com") Acheter un à-côté &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												div
+													p.item-number 4.
+													p.item-summary Réapprovisionnez votre compte Koodo Prépayé.
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											p Les réapprovisionnements ajoutent des crédits à votre compte afin que votre forfait de base puisse se renouveler tous les 30 jours et que vous puissiez acheter des à-côtés. Il y a deux façons de réapprovisionner votre compte : carte de crédit ou Visa Débit, ou bons de réapprovisionnement offerts dans les Boutiques Koodo ou chez nos partenaires de vente.
+											p Pour réapprovisionner votre compte prépayé, vous pouvez ouvrir une session dans votre compte Libre-service ou composer *611 à partir de votre téléphone Koodo.
+											p #[a.cta-link(href="https://libreserviceprepaye.koodomobile.com") Réapprovisionner votre compte &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+											p Vous voulez un bon de réapprovisionnement?
+											p #[a.cta-link(href="https://www.koodomobile.com/fr/prepaid-vouchers") Trouver un point de vente &nbsp; #[span.kooding-glyph.thin-chevron-right]]
+									li.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												p Curieux d'en savoir plus?
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											h4 Pour utiliser votre téléphone au Canada
+											p Si vous voulez faire ou recevoir des appels le jour, vous aurez besoin d'un à-côté Parler Canada Mur-à-mur si votre forfait n'inclut pas de minutes de jour.
+											p Le forfait de base à 25$ inclut des minutes d'appel local seulement. Pour faire et recevoir des appels interurbains, vous aurez besoin d'un à-côté Parler Canada Mur-à-mur.
+											p Vous pouvez utiliser votre téléphone Koodo Prépayé partout au Canada, mais pas à l'extérieur du pays.
+											p Les minutes en tout temps seront déduites de votre à-côté Parler comme ceci :
+											ul
+												li 1 min d'appel du Canada vers le Canada déduira 1 min
+												li 1 min d'appel du Canada vers une destination américaine déduira 2 min
+												li 1 min d'appel du Canada vers une destination internationale déduira 5 min
+											h4 Voyager aux É.-U.
+											p Vous pouvez rester branché pendant un séjour aux É.-U. en ajoutant des à-côtés Parler Itinérance aux É.-U., Données Itinérance aux É.-U. et Textos Itinérance aux É.-U. à votre forfait de base. Les à-côtés Parler Itinérance aux É.-U. comprennent les appels aux É.-U. et vers le Canada. Les à-côtés Textos Itinérance aux É.-U. comprennent les textos internationaux et les textos entrants illimités.#[sup #[a(href="#nitty-gritty-8") 8]] Vous devez vous procurer un à-coté Données Itinérance aux É.-U. pour recevoir ou envoyer des messages multimédias (photo et vidéo).
+									li#nitty-gritty.accordion-item
+										button.ai-summary
+											div.ai-container.inner-container
+												p.nitty-gritty-title Les p'tits détails (1 &#8209; 9)
+												span.kooding-glyph.circular-arrow-down
+										div.ai-details.inner-container
+											ol.numbered-list
+												li#nitty-gritty-1 Il doit y avoir suffisamment de crédits de service au compte pour couvrir le coût du forfait.
+												li#nitty-gritty-2 La disponibilité du service peut varier d'un pays à l'autre et est sujette à changement sans préavis. Messages des services Privilège et messagerie avec abonnement en sus. La messagerie photo inclut les messages photos internationaux envoyés et reçus au Canada. La messagerie photo n'est pas supportée par les téléphones intelligents BlackBerry qui n'utilisent pas le système d'exploitation BlackBerry 10.
+												li#nitty-gritty-3 Appels partout au Canada avec les forfaits Canada Mur-à-mur et appels locaux avec les autres forfaits. Les appels illimités le soir commencent à l'heure indiquée (17 h ou 19 h) et se terminent à 8 h le lendemain. Le week-end débute à 17 h ou à 19 h le vendredi et se termine à 8 h le lundi.
+												li#nitty-gritty-4 Les appels doivent être faits et complétés à partir du Canada.
+												li#nitty-gritty-5 Pour le forfait de base de 15 $, l'à-côté Parler et suffisamment de minutes en tout temps sont requis pour utiliser les fonctions vocales.
+												li#nitty-gritty-6 La boîte vocale et le renvoi d'appel utilisent du temps d'antenne. Pour accéder à votre boîte vocale ou utiliser le renvoi d'appel à partir de votre téléphone Koodo, vous devez avoir suffisamment de minutes en tout temps à votre compte. Les minutes en tout temps sont facturées à la minute et le temps d'antenne nécessaire pour établir la connexion est soustrait des minutes incluses.
+												li#nitty-gritty-7 Les à-côtés Parler et Données n'expirent pas si votre compte demeure activé. Les à-côtés Parler et Données peuvent seulement être utilisés lorsqu'il y a un forfait de base non expiré à votre compte. Les à-côtés seront enlevés du compte lorsque le compte sera désactivé. Les minutes en tout temps sont facturées à la minute et le temps d'antenne nécessaire pour établir la connexion est déduit des minutes incluses dans votre forfait. Toute utilisation de données sera arrondie aux 10 Ko près. Les à-côtés Données ne sont pas offerts avec les téléphones intelligents BlackBerry qui ne fonctionnent pas avec le système d'exploitation BlackBerry 10.
+												li#nitty-gritty-8 Vous devez vous procurer un à-coté Données Itinérance aux É.-U. pour recevoir ou envoyer des messages multimédias (photo et vidéo).
+												li#nitty-gritty-9 Un seul à-côté Parler gratuit de 100 minutes par client.
+						<!-- /.km-prepaid-plans.lang-fr -->
+					<!-- /.content -->
+				<!-- /#site-content -->
+			<!-- /#site-container -->
+		<!-- #site-wrapper.page-content -->
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js")
+		// START of local webserver JS resources
+		script(src="http://localhost:4000/public/scripts/page-title-helper.js")
+		script(src="http://localhost:4000/public/scripts/window-dimensions-helper.js")
+		// END of local webserver JS resources
+		script(src="scripts/main.js")
